@@ -1,0 +1,11 @@
+.NavBarr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: pink;
+}
+.sep {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
