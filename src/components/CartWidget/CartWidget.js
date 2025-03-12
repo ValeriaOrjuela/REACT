@@ -1,12 +1,16 @@
-import cart from './assets/shopping-cart.png'
-import './CartWidget.css'
+import React, { useContext } from 'react';
+import { CartContext } from '../CartContext';
+import './CartWidget.css';
+
 const CartWidget = () => {
-    return(
-        <div>
-            <img src= {cart} alt="Carrito_compras" className='CartImg'/>
-            0
+    const { cartItems } = useContext(CartContext); // Access cartItems from CartContext
+
+    return (
+        <div className="cart-widget">
+            <img className="CartImg" src="./assets/shopping-cart.png" alt="cart-icon" />
+            <span className="cart-count"> {cartItems.length}</span>
         </div>
-        
-    )
-}
-export default CartWidget
+    );
+};
+
+export default CartWidget;

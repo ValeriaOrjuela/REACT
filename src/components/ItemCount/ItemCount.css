@@ -1,0 +1,34 @@
+.Counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Controls {
+    display: flex;
+    align-items: center; 
+    margin-right: 10px; 
+}
+
+.Boton {
+    width: 30px; 
+    height: 30px; 
+    font-size: 20px; 
+}
+.Boton1 {
+    width: 150px; 
+    height: 50px; 
+    font-size: 20px; 
+}
+
+
+.Numero {
+    margin: 0 10px; 
+    font-size: 18px; 
+}
+
+.AddToCart {
+    margin-top: 15px; 
+    text-align: center; 
+    width: 100%; 
+}

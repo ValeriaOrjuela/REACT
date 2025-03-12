@@ -1,1 +1,23 @@
+.ListGroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px; /* Space between items */
+    padding: 20px; /* Padding around the grid */
+}
 
+.CardItem {
+    border: 1px solid #ccc; /* Border around each item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside each item */
+    text-align: center; /* Center text */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.CardItem:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.ItemImg {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
